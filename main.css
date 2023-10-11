@@ -1,0 +1,114 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-color: hsl(30, 38%, 92%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+
+    display: flex;
+    width: 600px;
+    height: 450px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.container-thumbnail {
+    width: 50%;
+}
+.container-thumbnail img {
+    height: 100%;
+}
+
+
+.container-text {
+    width: 50%;
+    padding: 2rem;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+}
+
+.title {
+    margin-top: 1.22rem;
+    text-transform: capitalize;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.description {
+    margin-top: 1.22rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+}
+
+.price-wrapper {
+    margin-top: 1.22rem;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+
+}
+
+.original-price {
+    margin-left: 1rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.add-button {
+    margin-top: 1.4rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-weight: bold;
+}
+.add-button:hover {
+    background-color: hsl(158, 36%, 23%);
+    cursor: pointer;
+}
+
+.add-button img {
+    margin-right: 0.5rem;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 640px) {
+    .main {
+        background-color: salmon;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
